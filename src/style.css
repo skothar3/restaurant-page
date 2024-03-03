@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  /* border: 0.5px solid blue; */
+}
+
+:root {
+  --background-color: #D03B22;
+  --foreground-color: #F2E5C3;
+  --font-color: #5F6062;
+
+  padding: 2vh 1.6vw;
+  background-color: var(--background-color);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  display: grid;
+  grid-template-rows: 2fr 5fr 1fr;
+  grid-template-columns: 1fr;
+  background-color: var(--foreground-color);
+  color: var(--font-color);
+}
+
+/* HEADER  */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vw;
+}
+
+header div.address {
+  text-align: center;
+  border-bottom: 1px solid darkgrey;
+  padding: 2vh 0;
+  margin-bottom: 3vh;
+  width: 100%;
+}
+
+header nav {
+  font-family: "Balthazar", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: auto;
+  display: inline-flex;
+  gap: 2vw;
+}
+
+header nav button {
+  all: unset;
+  transition: border-bottom 500ms;
+}
+
+header nav button.order {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 2px solid var(--foreground-color);
+  box-shadow: 3px 3px var(--font-color);
+  padding: 1vh 1.5vw;
+}
+
+header nav button:not(.order):hover {
+  cursor: pointer;
+  color: var(--background-color);
+  border-bottom: 3px dotted var(--background-color);
+}
+
+header nav button.order:hover {
+  cursor: pointer;
+  background-color: var(--font-color);
+}
+
+
