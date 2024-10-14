@@ -1,3 +1,10 @@
 import './style.css';
+import corleoneImgSrc from './images/corleone.jpg';
 
-console.log('Testing 1 2 3...');
+const sliderDiv = document.querySelector('div.slider');
+const corleoneImg = new Image();
+
+corleoneImg.src = corleoneImgSrc;
+
+sliderDiv.prepend(corleoneImg);
+

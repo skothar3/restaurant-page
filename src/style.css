@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   box-sizing: border-box;
-  /* border: 0.5px solid blue; */
+  border: 0.5px solid blue;
 }
 
 :root {
-  --background-color: #D03B22;
-  --foreground-color: #F2E5C3;
-  --font-color: #5F6062;
+  --background-color: #d03b22;
+  --foreground-color: #f2e5c3;
+  --font-color: #5f6062;
 
   padding: 2vh 1.6vw;
   background-color: var(--background-color);
@@ -19,34 +19,47 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   display: grid;
-  grid-template-rows: 2fr 5fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
   grid-template-columns: 1fr;
   background-color: var(--foreground-color);
   color: var(--font-color);
 }
 
-/* HEADER  */
+button.special {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 2px solid var(--foreground-color);
+  box-shadow: 3px 3px var(--font-color);
+  padding: 1vh 1.5vw;
+}
+
+button.special:hover {
+  cursor: pointer;
+  background-color: var(--font-color);
+}
+
+/* HEADER {{{ */
 
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 2vh 2vw;
 }
 
 header div.address {
+  font-size: 0.8rem;
   text-align: center;
   border-bottom: 1px solid darkgrey;
   padding: 2vh 0;
-  margin-bottom: 3vh;
   width: 100%;
 }
 
 header nav {
-  font-family: "Balthazar", sans-serif;
+  font-family: Balthazar, sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
   margin-top: auto;
   display: inline-flex;
   gap: 2vw;
@@ -58,11 +71,7 @@ header nav button {
 }
 
 header nav button.order {
-  background-color: var(--background-color);
-  color: var(--foreground-color);
-  border: 2px solid var(--foreground-color);
-  box-shadow: 3px 3px var(--font-color);
-  padding: 1vh 1.5vw;
+
 }
 
 header nav button:not(.order):hover {
@@ -72,8 +81,37 @@ header nav button:not(.order):hover {
 }
 
 header nav button.order:hover {
-  cursor: pointer;
-  background-color: var(--font-color);
 }
 
+/* }}} */
 
+/* MAIN {{{ */
+
+main {
+  padding: 2vh 2vw;
+}
+
+main div.slider {
+  position: relative;
+}
+
+main div.slider img {
+  filter: brightness(60%);
+  object-fit: cover;
+  /* object-position: right; */
+  /* width: 100px; */
+  height: 50%;
+  /* width: 100%; */
+}
+
+main div.slider button {
+  font-family: Balthazar, sans-serif;
+  font-weight: 300;
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: 45%;
+  left: 43%;
+}
+
+/* }}} */
