@@ -1,9 +1,5 @@
 import './style.css';
-import corleoneImgSrc from './images/corleone.jpg';
+import addHomepage from './homepage.js';
 
-const sliderDiv = document.querySelector('div.slider');
-const corleoneImg = new Image();
+addHomepage();
 
-corleoneImg.src = corleoneImgSrc;
-
-sliderDiv.prepend(corleoneImg);
