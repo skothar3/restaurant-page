@@ -7,4 +7,3 @@ const corleoneImg = new Image();
 corleoneImg.src = corleoneImgSrc;
 
 sliderDiv.prepend(corleoneImg);
-
