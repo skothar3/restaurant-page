@@ -1,0 +1,32 @@
+main div.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+main div.slider {
+  position: relative;
+  height: 70vh;
+}
+
+main div.slider img {
+  display: block;
+  filter: brightness(60%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+main div.slider button {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+
+main p.welcome {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  /* margin-top: 5vw; */
+}
+
