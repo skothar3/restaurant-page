@@ -1,9 +1,9 @@
-import "./menu_style.css";
+import "./menu.css";
 import fungiImgSrc from "./images/fungi.jpg";
 
 const contentMain = document.querySelector("main#content");
 const containerDiv = document.createElement("div");
-containerDiv.classList.add("container");
+containerDiv.classList.add("menupage_container");
 const sliderDiv = document.createElement("div");
 sliderDiv.classList.add("slider");
 const menuHeading = document.createElement("h1");
@@ -21,8 +21,6 @@ containerDiv.appendChild(sliderDiv);
 containerDiv.appendChild(menuContainer);
 
 function addMenuPage() {
-  // containerDiv.appendChild(welcomeP);
-
   contentMain.appendChild(containerDiv);
 }
 const menuItems = [

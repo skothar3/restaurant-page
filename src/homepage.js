@@ -1,10 +1,10 @@
-import "./homepage_style.css";
+import "./homepage.css";
 import corleoneImgSrc from "./images/corleone.jpg";
 
 const contentMain = document.querySelector("main#content");
 
 const containerDiv = document.createElement("div");
-containerDiv.classList.add("container");
+containerDiv.classList.add("homepage_container");
 const sliderDiv = document.createElement("div");
 sliderDiv.classList.add("slider");
 const centerBtn = document.createElement("button");

@@ -1,15 +1,15 @@
-main div.container {
+main div.menupage_container {
   display: flex;
   flex-direction: column;
   gap: 4vw;
 }
 
-main div.slider {
+main div.menupage_container div.slider {
   position: relative;
   height: 70vh;
 }
 
-main div.slider img {
+main div.menupage_container div.slider img {
   display: block;
   filter: brightness(60%);
   object-fit: cover;
@@ -17,7 +17,7 @@ main div.slider img {
   width: 100%;
 }
 
-main div.slider h1 {
+main div.menupage_container div.slider h1 {
   color: white;
   font-size: 3.0rem;
   position: absolute;
@@ -25,18 +25,18 @@ main div.slider h1 {
   left: 40%;
 }
 
-main div.menu_container {
+main div.menupage_container div.menu_container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main div.menu_container div.course_container {
+main div.menupage_container div.menu_container div.course_container {
   text-align: center;
   margin-bottom: 5vh;
   width: 60%;
 }
 
-main div.menu_container div.course_container h2 {
+main div.menupage_container div.menu_container div.course_container h2 {
   font-size: 2.0rem;
 }

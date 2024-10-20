@@ -1,6 +1,7 @@
 import "./style.css";
 import addHomepage from "./homepage.js";
 import addMenuPage from "./menu.js";
+import addContactPage from "./contact.js";
 
 const contentMain = document.querySelector("main#content");
 const logoBtn = document.querySelector("input.logo");
@@ -15,6 +16,11 @@ logoBtn.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
   contentMain.replaceChildren();
   addMenuPage();
+})
+
+contactBtn.addEventListener("click", () => {
+  contentMain.replaceChildren();
+  addContactPage();
 })
 
 addHomepage();
